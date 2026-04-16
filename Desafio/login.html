@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio login</title>
+</head>
+    <body>
+        <script>
+            let nome = prompt ("Login: ");
+            console.log(nome);
+            
+            let senha = prompt ("Digite sua senha: ");
+         
+            if (nome === null || senha === null){
+                alert(`Digite alguma coisa`)
+            }
+            
+            if (nome.length > 3 && nome.includes("@"))  {
+                alert(`Usuário válido`)
+            }
+            
+            
+            if (nome === "" || senha === ""){
+                alert(`Usuário ou senha incorretos`)
+            }
+            
+            if (nome === "1324" && senha === "1234"){
+                alert ("Login efetuado com sucesso!");
+                window.location.href = "homeprogram.html"
+            }
+            
+            else{
+                alert("Usuário ou senha incorretos!!!")
+            }
+            
+            let user = "Javascript"
+            nome.length // retorna a qtde de caracteres
+            nome.includes("script");    // retorna se a string inclui um termo.
+            nome.toLowerCase(); // transforma tudo em minúsculo
+            nome.toLocaleUpperCase(); // transforma tudo em maiúsculo
+            nome.toLowerCase.includes ();// usa o UpperCase+LowerCase
+            nome.trim(); // remove espaços do início ao fim
+            nome.replace("a" , "o");  //substitui os primeiros valores - no caso A por O
+            nome.replaceAll ()  //substitui todos os valores
+            
+            isNan(valor) // avalia se é nº
+            toLocaleString   // preço. Formata nº.
+            
+            Math
+            Math.random();  // 0 à 0.9999999
+            Math.random() * 7;  //nº random até 6 (aqui conta o 0)
+            Math.floor(Math.random() * 7); // para gerar nº inteiro de 0 a 6 (os nºs smp tendem a arredondar p baixo)
+            
+            Math.floor(); // arredonda o nº p baixo
+            Math.ceil(); // arredonda o nº p cima
+            Math.round(); // arredonda o valor inteiro mais próximo
+            
+        </script>
+    </body>
+</html>
